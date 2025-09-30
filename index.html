@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Roberto Zea Gonzalez - Superación Personal y Marketing Digital | Alineación con Propósito</title>
+    <meta name="description" content="+100 clientes satisfechos. Garantizo 45% de mejora en tu primera semana. Estrategias orgánicas para alinearte con tu propósito de vida.">
+    <meta name="keywords" content="superación personal, propósito de vida, marketing digital, estrategias orgánicas, José Roberto Zea">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            overflow-x: hidden;
+            background: #000;
+            color: white;
+            scroll-behavior: smooth;
+        }
+
+        .page {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #0a1a2e 0%, #16213e 70%, #1a2a5e 100%);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .trust-indicators {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: flex;
+            gap: 15px;
+            z-index: 10;
+        }
+
+        .trust-badge {
+            background: rgba(0, 212, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 212, 255, 0.3);
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            animation: gentle-pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes gentle-pulse {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+
+        .hero-content {
+            max-width: 900px;
+            padding: 2rem;
+            position: relative;
+            z-index: 5;
+        }
+
+        .results-highlight {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            padding: 15px 30px;
+            border-radius: 50px;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+
+        .main-headline {
+            background: linear-gradient(45deg, #00d4ff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .sub-headline {
+            color: #ffffff;
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .value-proposition {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            max-width: 800px;
+        }
+
+        .social-proof-badge {
+            background: rgba(255, 215, 0, 0.15);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin: 1rem 0;
+            display: inline-block;
+        }
+
+        .urgency-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .pricing-showcase {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .old-price {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .new-price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .price-save {
+            background: #ff6b35;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+
+        .availability-counter {
+            font-size: 1.2rem;
+            color: #ffff00;
+            margin-bottom: 1rem;
+        }
+
+        .spots-remaining {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ff6b35;
+            margin: 0.5rem 0;
+        }
+
+        .primary-cta {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            padding: 18px 40px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        .primary-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        .guarantee-text {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 1rem;
+        }
+
+        .bg-pattern {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.1;
+            pointer-events: none;
+        }
+
+        .floating-element {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            background: #00d4ff;
+            border-radius: 50%;
+            animation: gentle-float 6s ease-in-out infinite;
+        }
+
+        @keyframes gentle-float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .results-section {
+            background: linear-gradient(135deg, #1B2735 0%, #090A0F 100%);
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        .results-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+            background: linear-gradient(45deg, #00d4ff, #9e00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .result-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .result-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .result-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #00d4ff;
+            margin-bottom: 1rem;
+        }
+
+        .result-description {
+            font-size: 1.1rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .purpose-section {
+            background: radial-gradient(ellipse at center, #1a2a6c 0%, #0a1a2e 100%);
+            padding: 4rem 2rem;
+        }
+
+        .purpose-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #ffffff;
+        }
+
+        .purpose-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .purpose-text {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+        }
+
+        .alignment-benefits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .services-section {
+            background: linear-gradient(135deg, #2c1810 0%, #1a2a6c 100%);
+            padding: 4rem 2rem;
+        }
+
+        .services-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .services-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 3rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 212, 255, 0.2);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            color: #00d4ff;
+            margin-bottom: 1rem;
+        }
+
+        .service-benefit {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 1rem;
+        }
+
+        .service-description {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-features {
+            list-style: none;
+        }
+
+        .service-features li {
+            margin: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .guarantee-section {
+            background: linear-gradient(135deg, #0a1a2e 0%, #1B2735 100%);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .guarantee-badge {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 25px rgba(76, 175, 80, 0.3);
+        }
+
+        .guarantee-details {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-form-section {
+            background: linear-gradient(135deg, #2c1810 0%, #1a2a6c 50%, #0a1a2e 100%);
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        .form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            padding: 3rem;
+        }
+
+        .form-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #00d4ff, #9e00ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .form-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 3rem;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: #00d4ff;
+            box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+        }
+
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .contact-form select {
+            cursor: pointer;
+        }
+
+        .contact-form select option {
+            background: #1a1a1a;
+            color: white;
+        }
+
+        .form-submit-btn {
+            width: 100%;
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            padding: 18px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+        }
+
+        .form-submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        .privacy-text {
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.6);
+            margin-top: 1rem;
+        }
+
+        .form-success {
+            text-align: center;
+            padding: 2rem;
+            display: none;
+        }
+
+        .success-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-success h3 {
+            color: #4CAF50;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-success p {
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .whatsapp-direct-btn {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .whatsapp-direct-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .final-cta-section {
+            background: radial-gradient(ellipse at center, #1a2a6c 0%, #0a0a0a 100%);
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+        }
+
+        .cta-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #00d4ff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cta-subtitle {
+            font-size: 1.3rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .social-link {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .multiple-cta-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .secondary-cta {
+            background: transparent;
+            color: #00d4ff;
+            padding: 15px 30px;
+            border: 2px solid #00d4ff;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .secondary-cta:hover {
+            background: #00d4ff;
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            .hero-title { font-size: 2.5rem; }
+            .main-headline { font-size: 2.2rem; }
+            .sub-headline { font-size: 2rem; }
+            .results-grid { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; }
+            .multiple-cta-container { flex-direction: column; }
+            .pricing-showcase { flex-direction: column; gap: 1rem; }
+            .form-row { grid-template-columns: 1fr; gap: 0; }
+            .form-container { padding: 2rem 1.5rem; }
+            .form-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <section class="page hero-section">
+        <div class="trust-indicators">
+            <div class="trust-badge">⚡ Respuesta en 2 horas</div>
+            <div class="trust-badge">🎯 100% Personalizado</div>
+        </div>
+
+        <div class="bg-pattern" id="bgPattern"></div>
+        
+        <div class="hero-content">
+            <div class="results-highlight">
+                🚀 Garantizo 45% de mejora en tu primera semana
+            </div>
+            
+            <h1 class="hero-title">
+                <div class="main-headline">¿Listo para alinearte con tu</div>
+                <div class="sub-headline">propósito de vida?</div>
+            </h1>
+            
+            <p class="value-proposition">
+                Soy <strong>José Roberto Zea Gonzalez</strong>, y he ayudado a <strong>+100 clientes</strong> a encontrar su camino hacia la superación personal y el éxito empresarial. No es solo marketing, es transformación de vida.
+            </p>
+
+            <div class="social-proof-badge">
+                ✅ +100 clientes satisfechos con mi servicio
+            </div>
+
+            <div class="urgency-container">
+                <div class="pricing-showcase">
+                    <div class="old-price">$7,777 MXN</div>
+                    <div class="new-price">$4,999 MXN</div>
+                    <div class="price-save">¡Ahorra $2,778!</div>
+                </div>
+                
+                <div class="availability-counter">Precio especial por tiempo limitado</div>
+                
+                <a href="https://wa.me/525587852695?text=Hola José Roberto, quiero aprovechar el precio especial de $4,999 y comenzar mi transformación" class="primary-cta" target="_blank">
+                    🎯 QUIERO MI TRANSFORMACIÓN POR $4,999
+                </a>
+                
+                <p class="guarantee-text">
+                    ✅ Primera cita de evaluación gratuita • Estrategias orgánicas • 1 mes de trabajo constante
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page purpose-section">
+        <h2 class="purpose-title">Más Allá del Marketing: Tu Propósito de Vida</h2>
+        <div class="purpose-content">
+            <p class="purpose-text">
+                Mi caso de éxito más importante es mi <strong>superación personal</strong>. No solo te ayudo a mejorar tus números, 
+                sino a <strong>alinearte con tu propósito de vida</strong>. Porque cuando tu negocio refleja quién eres realmente, 
+                el éxito llega de forma natural y sostenible.
+            </p>
+            
+            <div class="alignment-benefits">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Propósito Clarificado</h3>
+                    <p>Identificamos tu misión única y cómo convertirla en un negocio rentable</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💫</div>
+                    <h3>Energía Alineada</h3>
+                    <p>Tus esfuerzos de marketing fluyen naturalmente cuando trabajas en tu propósito</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🚀</div>
+                    <h3>Crecimiento Auténtico</h3>
+                    <p>Atraes clientes ideales que resonan con tu verdadera esencia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page results-section">
+        <h2 class="results-title">Resultados que Transforman</h2>
+        <div class="results-grid">
+            <div class="result-card">
+                <div class="result-number">+100</div>
+                <div class="result-description">Clientes satisfechos que han transformado su vida y negocio</div>
+            </div>
+            <div class="result-card">
+                <div class="result-number">45%</div>
+                <div class="result-description">Mejora garantizada en tu primera semana de trabajo</div>
+            </div>
+            <div class="result-card">
+                <div class="result-number">1 mes</div>
+                <div class="result-description">Trabajo constante ejecutando estrategias adaptadas a tus datos</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page services-section">
+        <h2 class="services-title">Mi Método de Transformación</h2>
+        <p class="services-subtitle">Trabajamos en ambos frentes: tu negocio y tu propósito personal</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3 class="service-title">Evaluación Inicial Integral</h3>
+                <div class="service-benefit">Descubre tu potencial real</div>
+                <p class="service-description">Analizamos tu negocio actual y tu alineación con tu propósito de vida</p>
+                <ul class="service-features">
+                    <li>Diagnóstico de negocio completo</li>
+                    <li>Identificación de tu propósito</li>
+                    <li>Plan de alineación personalizado</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">🌱</div>
+                <h3 class="service-title">Estrategias Orgánicas</h3>
+                <div class="service-benefit">Crecimiento auténtico</div>
+                <p class="service-description">Desarrollamos estrategias que resonan con tu esencia y atraen a tu audiencia ideal</p>
+                <ul class="service-features">
+                    <li>Marketing alineado con tu propósito</li>
+                    <li>Contenido auténtico y poderoso</li>
+                    <li>Atracción de clientes ideales</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">📊</div>
+                <h3 class="service-title">Seguimiento con Datos</h3>
+                <div class="service-benefit">Adaptación constante</div>
+                <p class="service-description">Ajustamos las estrategias basándonos en los datos reales que vamos obteniendo</p>
+                <ul class="service-features">
+                    <li>Análisis continuo de resultados</li>
+                    <li>Optimización basada en datos</li>
+                    <li>Estrategias B2B efectivas</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="page guarantee-section">
+        <div class="guarantee-badge">
+            🎯 GARANTÍA DE 45% EN PRIMERA SEMANA
+        </div>
+        <div class="guarantee-details">
+            <p><strong>Te garantizo un 45% de mejora en tu primera semana</strong>, y el resto dependerá de tu desempeño y compromiso.</p>
+            <p>Desde la primera cita evaluaremos tu negocio y te daré estrategias orgánicas que te ayudarán a mejorar tus números.</p>
+            <p><strong>1 mes de trabajo constante</strong> ejecutando las estrategias que se vayan adecuando a los datos arrojados.</p>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="form-container">
+            <h2 class="form-title">Comienza Tu Transformación</h2>
+            <p class="form-subtitle">
+                Agenda tu primera cita de evaluación gratuita y descubre cómo alinear tu negocio con tu propósito de vida
+            </p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="firstName" name="firstName" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="lastName" name="lastName" placeholder="Apellidos" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder="WhatsApp" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" id="business" name="business" placeholder="¿Qué negocio tienes?" required>
+                </div>
+                
+                <div class="form-group">
+                    <select id="objective" name="objective" required>
+                        <option value="">¿Qué buscas lograr?</option>
+                        <option value="purpose">Alinearme con mi propósito de vida</option>
+                        <option value="sales">Aumentar mis ventas</option>
+                        <option value="clients">Conseguir más clientes</option>
+                        <option value="brand">Crear una marca auténtica</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="form-submit-btn">
+                    🎁 QUIERO MI EVALUACIÓN GRATUITA
+                </button>
+                
+                <p class="privacy-text">
+                    🔒 Tu información está segura. Te contactaré personalmente.
+                </p>
+            </form>
+            
+            <div class="form-success" id="formSuccess">
+                <div class="success-icon">🎉</div>
+                <h3>¡Perfecto! Tu evaluación está reservada</h3>
+                <p>Te contactaré en las próximas 2 horas para coordinar tu sesión de evaluación gratuita.</p>
+                <p><strong>¿Quieres acelerar el proceso?</strong></p>
+                <a href="https://wa.me/525587852695?text=Hola José Roberto, acabo de solicitar mi evaluación gratuita y quiero coordinar ahora mismo" class="whatsapp-direct-btn" target="_blank">
+                    📱 Coordinar por WhatsApp Ahora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="page final-cta-section">
+        <h2 class="cta-title">¿Listo para Alinearte con Tu Propósito?</h2>
+        <p class="cta-subtitle">
+            No es solo sobre números, es sobre crear un negocio que ames y una vida con propósito.
+        </p>
+
+        <div class="social-links">
+            <a href="https://www.instagram.com/soyzeagonzalez/" class="social-link" target="_blank">📷 Instagram</a>
+            <a href="mailto:zea_robert@hotmail.com" class="social-link">✉️ Email</a>
+        </div>
+
+        <div class="pricing-showcase">
+            <div class="old-price">$7,777 MXN</div>
+            <div class="new-price">$4,999 MXN</div>
+            <div class="price-save">Oferta Especial</div>
+        </div>
+
+        <div class="multiple-cta-container">
+            <a href="https://wa.me/525587852695?text=Hola José Roberto, quiero el paquete de $4,999 y comenzar mi transformación de vida y negocio" class="primary-cta" target="_blank">
+                🚀 COMENZAR MI TRANSFORMACIÓN
+            </a>
+            
+            <a href="tel:+525587852695" class="secondary-cta">
+                📞 Llamar Ahora
+            </a>
+        </div>
+        
+        <p style="margin-top: 1.5rem; opacity: 0.8; font-size: 0.9rem;">
+            🔒 Compromiso real • ⚡ 45% de mejora garantizada en primera semana
+        </p>
+    </section>
+
+    <script>
+        function createFloatingElements() {
+            const bgPattern = document.getElementById('bgPattern');
+            for (let i = 0; i < 8; i++) {
+                const element = document.createElement('div');
+                element.className = 'floating-element';
+                element.style.left = Math.random() * 100 + '%';
+                element.style.top = Math.random() * 100 + '%';
+                element.style.animationDelay = Math.random()
